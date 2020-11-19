@@ -1,0 +1,51 @@
+{
+  "name": "gpsb",
+  "version": "1.0.0",
+  "description": "\"# gpsb\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revuwem/gpsb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revuwem/gpsb/issues"
+  },
+  "homepage": "https://github.com/revuwem/gpsb#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "browser-sync": "^2.26.13",
+    "chrome-launcher": "^0.13.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-pug-linter": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylelint": "^13.0.0",
+    "gulp-terser": "^2.0.0",
+    "gulp-w3c-html-validator": "^2.0.1",
+    "lighthouse": "^6.4.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard-scss": "^1.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

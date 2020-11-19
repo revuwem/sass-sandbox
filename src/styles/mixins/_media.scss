@@ -1,0 +1,23 @@
+@mixin tablet-media {
+    @media (min-width: $tabletMediaWidth) {
+        @content;
+    }
+}
+
+@mixin tablet-horizontal-media{
+    @media(min-width: $tabletHorizontalMediaWidth){
+        @content;
+    }
+}
+
+@mixin laptop-media {
+    @media(min-width: $laptopMediaWidth){
+        @content;
+    }
+}
+
+@mixin custom-media($width) {
+    @media (min-width: $width){
+        @content;
+    }
+}

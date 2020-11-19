@@ -1,0 +1,11 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'utils/normalize',
+    'utils/fonts',
+    'utils/variables';
+
+@import 'mixins/media';
+
+@import 'common/global',
+    'common/header',
+    'common/footer';

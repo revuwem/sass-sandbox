@@ -11,15 +11,15 @@ const rename = require('gulp-rename');
 module.exports = function sassBuild() {
     return gulp.src('src/styles/*.scss')
         .pipe(plumber())
-        .pipe(gulpStylelint({
-            failAfterError: false,
-            reporters: [
-                {
-                    formatter: 'string',
-                    console: true
-                }
-            ]
-        }))
+        // .pipe(gulpStylelint({
+        //     failAfterError: false,
+        //     reporters: [
+        //         {
+        //             formatter: 'string',
+        //             console: true
+        //         }
+        //     ]
+        // }))
         .pipe(sourcemap.init())        
         .pipe(sass())
         .pipe(autoprefixer({

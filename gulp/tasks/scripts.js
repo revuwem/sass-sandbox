@@ -7,7 +7,7 @@ const terser = require('gulp-terser');
 const rename = require('gulp-rename');
 
 module.exports = function scriptsBuild () {
-    return gulp.src('src/js/main.js')
+    return gulp.src('src/scripts/main.js')
         .pipe(plumber())
         .pipe(eslint())
         .pipe(eslint.format())

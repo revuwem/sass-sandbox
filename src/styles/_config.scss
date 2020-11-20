@@ -1,0 +1,20 @@
+$primary-color: #252525;
+$secondary-color: #a25efa;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #252525;
+    } @else {
+        @return #e5e5e5;
+    }
+}

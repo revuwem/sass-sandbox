@@ -8,8 +8,17 @@ html{
     box-sizing: border-box;
 }
 
-body{
+body{    
     margin: 0;
+    color: $text-color; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    background-color: $primary-color;    
+}
+
+.light{
+    @include theme($light-theme: false);
 }
 
 img{
@@ -17,6 +26,6 @@ img{
 }
 
 a{
-    text-decoration: none;
-    font-style: italic;
+    text-decoration: none;    
 }
+

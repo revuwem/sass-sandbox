@@ -2,10 +2,12 @@
 
 @import 'utils/normalize',
     'utils/fonts',
-    'utils/variables';
-
-@import 'mixins/media';
+    'utils/variables',
+    'utils/functions',
+    'utils/mixins';
 
 @import 'common/global',
     'common/header',
     'common/footer';
+
+@import 'components/main';

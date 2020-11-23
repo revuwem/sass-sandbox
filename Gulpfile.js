@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const pug = require('./gulp/tasks/pug');
 const styles = require('./gulp/tasks/styles');
 const scripts = require('./gulp/tasks/scripts');
+const images = require('./gulp/tasks/images');
 const serve = require('./gulp/tasks/serve');
 const clean = require('./gulp/tasks/clean');
 const lighthouse = require('./gulp/tasks/lighthouse');
@@ -14,7 +15,7 @@ function setMode(isProd = false){
     };
 };
 
-const dev = gulp.parallel(pug, styles, scripts);
+const dev = gulp.parallel(pug, styles, scripts, images);
 
 const build = gulp.series(clean, dev);
 

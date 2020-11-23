@@ -1,1 +1,51 @@
 extends common/template
+
+include common/head
+include common/social-icons
+
+block head
+    +head('Mike Smith Projects')
+
+block content
+    main
+        section.projects
+            .projects__bio-image
+                h2.text-secondary My Projects
+            ul.projects__items
+                li.projects__item
+                    img(src="img/project-1.jpg", alt="Project 1")
+                    .projects__btns
+                        a.projects__btn(href="#!")
+                            i.fas.fa-eye Preview
+                        a.projects__btn(href="#!")
+                            i.fab.fa-github Github
+                li.projects__item
+                    img(src="img/project-1.jpg", alt="Project 2")
+                    .projects__btns
+                        a.projects__btn(href="#!")
+                            i.fas.fa-eye Preview
+                        a.projects__btn(href="#!")
+                           i.fab.fa-github Github
+                li.projects__item
+                    img(src="img/project-1.jpg", alt="Project 3")
+                    .projects__btns
+                        a.projects__btn(href="#!")
+                            i.fas.fa-eye Preview
+                        a.projects__btn(href="#!")
+                            i.fab.fa-github Github
+                li.projects__item
+                    img(src="img/project-1.jpg", alt="Project 4")
+                    .projects__btns
+                        a.projects__btn(href="#!")
+                            i.fas.fa-eye Preview
+                        a.projects__btn(href="#!")
+                            i.fab.fa-github Github
+                li.projects__item
+                    img(src="img/project-1.jpg", alt="Project 5")
+                    .projects__btns
+                        a.projects__btn(href="#!")
+                            i.fas.fa-eye Preview
+                        a.projects__btn(href="#!")
+                            i.fab.fa-github Github
+            +social-icons
+            include common/footer

@@ -1,5 +1,10 @@
 extends common/template
 
+include common/head
+
+block head
+    +head('Mike Smith Portfolio')
+
 block content
     main
         section.home

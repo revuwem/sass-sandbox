@@ -1,0 +1,26 @@
+extends common/template
+
+include common/head
+include common/social-icons
+
+block head
+    +head('Contact Mike Smith')
+block content
+    main
+        section.contact
+            h2 Contact me
+            .contact__list
+                .contact__email
+                    i.fas.fa-envelope 
+                    span Email
+                    .text-secondary email@email.com
+                .contact__phone
+                    i.fas.fa-mobile-alt 
+                    span Phone
+                    .text-secondary +0-(123)-345-67-89
+                .contact__address
+                    i.fas.fa-map-marker-alt 
+                    span Address
+                    .text-secondary 123 First St. Houston, TX
+            +social-icons
+            include common/footer

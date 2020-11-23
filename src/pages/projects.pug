@@ -5,7 +5,20 @@ include common/social-icons
 
 block head
     +head('Mike Smith Projects')
-
+block header
+    header
+        .menu-btn  
+            span.menu-btn__burger
+        nav.nav
+            ul.menu-nav
+                li.menu-nav__item
+                    a.menu-nav__link(href="index.html") Home
+                li.menu-nav__item
+                    a.menu-nav__link(href="about.html") About me
+                li.menu-nav__item.active
+                    a.menu-nav__link(href="projects.html") Projects
+                li.menu-nav__item
+                    a.menu-nav__link(href="contact.html") Contact me
 block content
     main
         section.projects

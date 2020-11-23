@@ -1,6 +1,7 @@
 extends common/template
 
 include common/head
+include common/social-icons
 
 block head
     +head('Mike Smith Portfolio')
@@ -12,15 +13,8 @@ block content
             h1.home__name Mike 
                 span.home__name--last Smith     
             h2 Web developer, designer & programmer
+            +social-icons
 
-            .social-icons
-                a.social-icons__link(href="#!")
-                    i.fab.fa-twitter.fa-2x
-                a.social-icons__link(href="#!")
-                    i.fab.fa-facebook.fa-2x
-                a.social-icons__link(href="#!")
-                    i.fab.fa-github.fa-2x
-                a.social-icons__link(href="#!")
-                    i.fab.fa-linkedin.fa-2x
+            
 
         
